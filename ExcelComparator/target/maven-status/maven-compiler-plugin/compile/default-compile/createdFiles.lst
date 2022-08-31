@@ -1,0 +1,7 @@
+core\ExcelComparator.class
+configuration\Constants.class
+core\ProccesListTeams.class
+pjo\MemberCommunity.class
+core\ProccesCSV.class
+core\ProccesExcels.class
+pjo\MemberTeams.class
