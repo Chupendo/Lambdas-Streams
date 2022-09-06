@@ -26,7 +26,7 @@ public class StreamTest {
 		int cont=1,sum=0;
 		avg2 = stream1
 				.map(Double::new)
-				.reduce(0.0, null)
+				.reduce(0.0, null);
 		System.out.println(avg2);
 		
 	}
