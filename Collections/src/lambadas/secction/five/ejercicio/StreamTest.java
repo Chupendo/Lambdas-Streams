@@ -1,4 +1,4 @@
-package lambdas.secction.five.ejercicio;
+package lambadas.secction.five.ejercicio;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

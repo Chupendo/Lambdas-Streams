@@ -1,4 +1,4 @@
-package lambdas.secction.five.operations;
+package lambadas.secction.five.operations;
 
 import java.util.Arrays;
 import java.util.List;

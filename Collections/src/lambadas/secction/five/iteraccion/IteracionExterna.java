@@ -1,4 +1,4 @@
-package lambdas.secction.five.iteraccion;
+package lambadas.secction.five.iteraccion;
 
 import java.util.Arrays;
 import java.util.List;

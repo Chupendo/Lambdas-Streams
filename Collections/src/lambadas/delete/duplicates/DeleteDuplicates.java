@@ -1,4 +1,4 @@
-package lambdas.delete.duplicates;
+package lambadas.delete.duplicates;
 
 import java.io.File;
 import java.io.FileInputStream;

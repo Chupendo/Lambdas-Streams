@@ -1,9 +1,9 @@
-package lambdas.secction.five.operations;
+package lambadas.secction.five.operations;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class OperReduce {
+public class OperAverage {
 
 	public static void main(String[] args) {
 		// Suma de los numeros al curado de los numeros pares
@@ -16,8 +16,8 @@ public class OperReduce {
 		System.out.println(" }");
 		
 		System.out.println("Funcion final average");
-		Integer result = lNumeros.stream().mapToInt(elem->elem).reduce((a,b)->a+b).getAsInt();
-		System.out.println("Reduce: "+result);
+		Double result = lNumeros.stream().mapToDouble(elem->elem).average().getAsDouble();
+		System.out.println("promedio: "+result);
 	}
 
 }

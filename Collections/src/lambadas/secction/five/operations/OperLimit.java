@@ -1,19 +1,16 @@
-package lambdas.secction.five.operations;
+package lambadas.secction.five.operations;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 /**
- * La operación intermedia "Map" produce un estrem en el que cada elemento es procesado por una función
+ * La operación intermedia "Limit" devuelve X elementos (numero limitado) de la colecicón
  *
  * @author andres.rpenuela
  *
  */
-public class OperMap {
+public class OperLimit {
 
 	public static void main(String[] args) {
 		// Suma de los numeros al curado de los numeros pares
@@ -27,10 +24,11 @@ public class OperMap {
 
 		//
 		System.out.println("Operacion intermecia Limit");
-		Function<Integer, Integer> fun1 = (elem)->elem*elem;
-		List<Integer> result = lNumeros.stream().map(fun1).toList();
-		System.out.print("List Reuslt: {");
-		result.forEach(elem->System.out.print(" "+elem));
+		List<Integer> result = lNumeros.stream().limit(3).toList();
+		System.out.print("Lista Reuslt: {");
+		result.forEach(num -> {
+			System.out.print(" " + num);
+		});
 		System.out.println(" }");
 	}
 }

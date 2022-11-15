@@ -1,4 +1,4 @@
-package lambdas.secction.five.autcoseable;
+package lambadas.secction.five.autcoseable;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

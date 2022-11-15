@@ -1,4 +1,4 @@
-package lambdas.secction.five.copyCollections;
+package lambadas.secction.five.copyCollections;
 
 import java.util.ArrayList;
 import java.util.Arrays;

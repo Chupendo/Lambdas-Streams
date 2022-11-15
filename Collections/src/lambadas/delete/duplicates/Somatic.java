@@ -1,4 +1,4 @@
-package lambdas.delete.duplicates;
+package lambadas.delete.duplicates;
 
 import java.util.Date;
 
