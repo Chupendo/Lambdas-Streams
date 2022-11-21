@@ -1,6 +1,9 @@
 package lamdas.secction.six.ejercicio.one;
 
 import java.util.List;
+import java.util.Random;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import lamdas.secction.six.ejercicio.pojos.Estudiante;
@@ -40,6 +43,15 @@ public class CreaStream1 {
 		
 		System.out.println("streamEstudiantes:");
 		streamEstudiantes.forEach(System.out::println);
+		
+		Random random = new Random();
+		IntStream streamInt = random.ints().limit(5);
+		System.out.println("streamInt:");
+		streamInt.forEach(System.out::println);
+		
+		IntStream streamInt2 = IntStream.rangeClosed(1, 5);
+		System.out.println("streamInt2:");
+		streamInt2.forEach(System.out::println);
 	}
 
 }
