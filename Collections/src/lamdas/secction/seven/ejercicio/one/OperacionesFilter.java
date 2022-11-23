@@ -37,6 +37,36 @@ public class OperacionesFilter {
 			.stream()
 			.filter(empleado-> empleado.esHombre() && empleado.getEdad()<26)
 			.forEach(System.out::println);
+		
+		
+		// Devolver Hombre y que empieza por A
+		System.out.println("Hombres y que empieze por A:");
+
+		lEmpleados
+			.stream()
+			.filter(Empleado::esHombre)
+			.filter(emp->emp.getNombre().startsWith("A"))
+			.forEach(System.out::println);
+		
+		// Devolver personal femenino mayor de 25 y cobre mas de 23k
+		System.out.println("Personal femenino mayor de 25 y cobre mas de 23k:");
+		Predicate<Empleado> empFem = Empleado::esMujer;
+		Predicate<Empleado> empMayor24 = em -> em.getEdad()>25;
+		Predicate<Empleado> empInMayor23k = em -> em.getIngresos()>23000;
+		Predicate<Empleado> empFemMayor24InMayor23K = empFem.and(empMayor24).and(empInMayor23k);
+		
+		lEmpleados
+			.stream()
+			.filter(empFemMayor24InMayor23K)
+			.forEach(System.out::println);
+		
+		System.out.println("Numero total de empleadas mayroes de 25 y cue cobra mas de 23k: "+
+				lEmpleados
+				.stream()
+				.filter(empFemMayor24InMayor23K)
+				.count()
+		);
+		
 	}
 	
 }
