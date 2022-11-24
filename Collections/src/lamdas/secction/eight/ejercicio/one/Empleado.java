@@ -1,4 +1,4 @@
-package lamdas.secction.eightejercicio.one;
+package lamdas.secction.eight.ejercicio.one;
 
 import java.util.ArrayList;
 import java.util.List;
