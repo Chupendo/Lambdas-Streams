@@ -51,10 +51,10 @@ public class Empleado implements Comparable<Empleado> {
 	public static List<Empleado> empleados(){
 		List<Empleado> lEmplados = new ArrayList<Empleado>();
 		lEmplados.add(new Empleado(0, "Andres", 24500.2,Genero.HOMBRE, 30));
-		lEmplados.add(new Empleado(0, "Ruth", 25300.5,Genero.MUJER, 35));
-		lEmplados.add(new Empleado(0, "Ramon", 16528,Genero.HOMBRE, 18));
-		lEmplados.add(new Empleado(0, "Paola", 22500,Genero.MUJER, 24));
-		lEmplados.add(new Empleado(0, "Andres", 35000,Genero.HOMBRE, 24));
+		lEmplados.add(new Empleado(1, "Ruth", 25300.5,Genero.MUJER, 35));
+		lEmplados.add(new Empleado(2, "Ramon", 16528,Genero.HOMBRE, 18));
+		lEmplados.add(new Empleado(3, "Paola", 22500,Genero.MUJER, 24));
+		lEmplados.add(new Empleado(4, "Andres", 35000,Genero.HOMBRE, 24));
 		
 		return lEmplados;
 
