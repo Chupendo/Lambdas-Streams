@@ -1,4 +1,4 @@
-package lamdas.secction.seven.ejercicio.one;
+package lamdas.secction.eightejercicio.one;
 
 import java.util.List;
 import java.util.function.Predicate;
