@@ -34,6 +34,11 @@ public class OperacionesReduccion2 {
 		System.out.println("Suma = "+ suma);
 			
 
+		int suma2 = IntStream.of(numeros).reduce(0, (num1,num2)->Integer.sum(num1, num2));
+		System.out.println("Suma 2= "+ suma);
+		
+		int suma3 = IntStream.of(numeros).reduce(0, Integer::sum);
+		System.out.println("Suma 3= "+ suma);
 		// Dada una lista de emepelados obenter el/la de mayor edad
 		List<Empleado> lEmpleado = Empleado.empleados();
 		
